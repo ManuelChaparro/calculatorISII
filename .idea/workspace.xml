@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="434cdf06-111e-40fe-bd4d-db9429c36bfd" name="Changes" comment="">
+    <list default="true" id="a260a83f-13c9-4ad7-a6f1-879e5182cba1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculatorISII-trunk.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/calculatorISII-trunk/controller/Controller.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/calculatorISII-trunk/models/Calculator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/Controller.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/models/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +46,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/santy/OneDrive/Escritorio/MinTic 2022/Ciclo 3"
+    "last_opened_file_path": "C:/Users/santy/OneDrive/Escritorio/UPTC/DECIMO SEMESTRE/Ingenieria de Software II/Calculadora/GitTrunk/calculatorISII-trunk"
   }
 }]]></component>
   <component name="RunManager">

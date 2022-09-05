@@ -1,17 +1,55 @@
 package controller;
 
 import models.Calculator;
+import views.Views;
+
+/**
+ * Esta clase define los metodos que reunen a los modelos y a las vistas. 
+ * @author: Manuel C. Rojas, Luis S. Parra, Pedro J. Neira
+ * @version:  05/09/2022/A
+ */
 
 public class Controller {
 
-    private static Calculator calculator;
-    private static final int NUM1 = 10;
-    private static final int NUM2 = 5;
-    public static void main(String[] args) {
-        calculator = new Calculator();
-        System.out.println(calculator.sum(NUM1, NUM2));
-        System.out.println(calculator.subtraction(NUM1, NUM2));
-        System.out.println(calculator.multiplication(NUM1, NUM2));
-        System.out.println(calculator.split(NUM1, NUM2));
+    private Calculator calculator;
+    private Views views;
+
+    /**
+     * Constructor para el controlador
+     */
+    public Controller() {
+    	calculator = new Calculator();
+    	views = new Views();
+    	init();
     }
+
+    /**
+     * Metodo que ejecuta el menú de funcionalidades de la calculadora, uniendo modelos y vistas.
+     */
+	private void init() {
+		boolean isRun = false;
+		while (!isRun) {
+			switch (views.showMenu()) {
+			case 1:
+				views.viewResult("Suma", calculator.sum(views.inputNumOne(), views.inputNumTwo()));
+				break;
+			case 2:
+				views.viewResult("Resta", calculator.subtraction(views.inputNumOne(), views.inputNumTwo()));
+				break;
+			case 3:
+				views.viewResult("Multiplicación", calculator.multiplication(views.inputNumOne(), views.inputNumTwo()));
+				break;
+			case 4:
+				views.viewResult("División", (int)(calculator.split(views.inputNumOne(), views.inputNumTwo())));
+				break;
+			case 5:
+				System.exit(0);
+				break;
+			default:
+				views.inputErr();
+				break;
+			}		
+		}
+		System.exit(0);
+	}   
 }

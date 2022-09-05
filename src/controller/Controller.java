@@ -15,7 +15,7 @@ public class Controller {
     private Views views;
 
     /**
-     * Constructor para el controlador
+     * Constructor para el controlador de la aplicacion.
      */
     public Controller() {
     	calculator = new Calculator();
